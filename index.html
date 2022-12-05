@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-    <h1>Fruteria Tuto</h1>
-    <h2><span id="listaDOM"></span></h2>
-    <h3>Primera Fruta<span id="first-fruit"></span></h3>
-    <h3>Ultima Fruta<span id="last-fruit"></span></h3>
-    <script src="assets/js/script.js"></script>
+    <nav>
+        <form id="form">
+            <div>
+                <p>Cantidad de cuartos:</p>
+                <input min="1" class="box-design" type="number" id="roomsQuantity" />
+            </div>
+            <div>
+                <p>M2 Desde:</p>
+                <input min="0" class="box-design" type="number" id="minimumInput" />
+            </div>
+            <div>
+                <p>M2 Hasta:</p>
+                <input min="0" class="box-design" type="number" id="maximumInput" />
+            </div>
+            <span class="button" onclick="filterApartments()">
+                Buscar</span>
+            <button class="button" type="reset">
+                Limpiar
+            </button>
+        </form>
+    </nav>
+
+    <section id="properties">
+        <h4>Total: <span id="totalSpan">0</span></h4>
+        <div class="properties"></div>
+    </section>
+    <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

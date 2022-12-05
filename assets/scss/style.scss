@@ -1,9 +1,60 @@
 * {
-    margin: 10px;
-    padding: 0;
+  margin: 0.5;
+  padding: 0;
+  text-align: center;
 }
 
-
 body {
-    background-color: bisque;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #4e4d4d;
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 9.5fr;
+  width: 100vw;
+}
+
+nav {
+  padding: 20px;
+  margin-top: 50px;
+  border-right: solid 3px white;
+  height: 90vh;
+}
+
+.button {
+  cursor: help;
+  background-color: rgba(38, 107, 16, 0.678);
+  border: 1px;
+  font-size: 20px;
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.properties {
+  padding: 0px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  gap: 25px;
+}
+.propertiesDOM {
+  background: rgba(75, 47, 47, 0.068);
+  box-shadow: 0px 2px 10px 2px rgba(255, 255, 255, 0.438);
+  border-radius: 10px;
+}
+.propertiesDOM .img {
+  border-radius: 10px;
+  height: 150px;
+  width: 310px;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-design {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.propertiesDOM section p {
+  margin: 2px;
 }
